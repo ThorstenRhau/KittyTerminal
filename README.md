@@ -6,6 +6,7 @@
   - [Installing on macOS with homebrew](#installing-on-macos-with-homebrew)
   - [Clone repository](#clone-repository)
   - [Set theme switch alias in .zshrc](#set-theme-switch-alias-in-zshrc)
+  - [Or browse themes with a kitten](#or-browse-themes-with-a-kitten)
   <!--toc:end-->
 
 This repo is intended for my personal use, it is public for easier cloning.
@@ -27,4 +28,10 @@ git clone https://github.com/ThorstenRhau/KittyTerminal.git ~/.config/kitty
 <pre>
 alias night='ln -sf ~/git/tokyonight.nvim/extras/kitty/tokyonight_storm.conf ~/.config/kitty/theme.conf'
 alias day='ln -sf ~/git/tokyonight.nvim/extras/kitty/tokyonight_day.conf ~/.config/kitty/theme.conf'
+</pre>
+
+## Or browse themes with a kitten
+
+<pre>
+kitty +kitten themes
 </pre>
