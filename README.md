@@ -5,7 +5,7 @@
 - [KittyTerminal](#kittyterminal)
   - [Installing on macOS with homebrew](#installing-on-macos-with-homebrew)
   - [Clone repository](#clone-repository)
-  - [Aliases to in to .zshrc](#aliases-to-in-to-zshrc)
+  - [Aliases](#aliases)
   <!--toc:end-->
 
 This repo is intended for my personal use, it is public for easier cloning.
@@ -22,13 +22,14 @@ brew install kitty
 git clone https://github.com/ThorstenRhau/KittyTerminal.git ~/.config/kitty
 ```
 
-## Aliases to in to .zshrc
+## Aliases
 
-For the _night_ and _day_ aliases to work you need to clone https://github.com/EdenEast/nightfox.nvim and add something like the text below to your shells rc-file. The example below is for the fish-shell.
+Clone https://github.com/folke/tokyonight.nvim.git.
+Below is a excerpt of my fish configuration
 
 ```fish
-if test -d "$HOME/git/nightfox.nvim"
-  alias night='ln -sf $HOME/git/nightfox.nvim/extra/nightfox/nightfox_kitty.conf $HOME/.config/kitty/current-theme.conf'
-  alias day='ln -sf $HOME/git/nightfox.nvim/extra/dayfox/nightfox_kitty.conf $HOME/.config/kitty/current-theme.conf'
+if test -d "$HOME/git/tokyonight.nvim"
+  alias night_kitty='ln -sf $HOME/git/tokyonight.nvim/extras/kitty/tokyonight_night.conf $HOME/.config/kitty/current-theme.conf'
+  alias day_kitty='ln -sf $HOME/git/tokyonight.nvim/extras/kitty/tokyonight_day.conf $HOME/.config/kitty/current-theme.conf'
 end
 ```
